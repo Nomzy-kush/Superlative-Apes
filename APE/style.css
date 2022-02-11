@@ -1,0 +1,606 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden !important;
+    background-color: transparent !important;
+  }
+  
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+
+.App {
+text-align: center;
+width: 100%;
+font-family: bigjohn;
+height: 100%;
+overflow-x: hidden !important;
+background-color: transparent !important;
+background: linear-gradient(
+#45dbff,
+#46daff,
+#4ad0fd,
+#4fc4f6,
+#58a0e0,
+#5e75c7,
+#6066be,
+#6062bc
+);
+}
+
+.color-logo {
+position: relative;
+z-index: 100;
+}
+
+
+
+.rainbow {
+position: absolute;
+top: 0;
+width: 17%;
+left: 0;
+}
+
+.mint h1 {
+color: white;
+font-size: 2rem;
+text-shadow: #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px,
+#000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px;
+}
+.mint {
+position: relative;
+z-index: 10;
+}
+.mint p {
+color: white;
+text-shadow: #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px,
+#000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px;
+}
+.mint a {
+text-decoration: none;
+}
+.mint-btn {
+position: relative;
+font-size: 2rem;
+margin-top: 20px;
+z-index: 1000;
+}
+.mint-btn p:first-child {
+color: #fff;
+text-shadow: #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px,
+#000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.mint-btn p:first-child,
+.mint-btn p:last-child {
+border: 1px solid black;
+background-color: #ededed;
+width: 390px;
+padding: 0 25px;
+position: relative;
+box-sizing: border-box;
+height: 55px;
+z-index: 100;
+margin: 0 auto;
+border-radius: 40px;
+}
+.mint-btn p:last-child {
+position: absolute;
+top: 5px;
+z-index: 1;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+/* top: 5px; */
+}
+
+.collection {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 290px;
+margin-bottom: 360px;
+position: relative;
+z-index: 10;
+}
+.collection-right {
+width: 620px;
+margin-left: 50px;
+text-align: left;
+}
+.gif {
+width: 500px;
+height: 500px;
+/* object-fit: fill; */
+}
+.collection-right p {
+font-family: "Montserrat", sans-serif;
+font-weight: 400;
+font-size: 24px;
+}
+.fade-rainbow {
+position: absolute;
+width: 100%;
+right: 0 !important;
+object-fit: contain;
+left: 0 !important;
+}
+.fade-rainbow img {
+width: 100%;
+}
+.collection-right h1 {
+color: white;
+
+-webkit-text-stroke: 0.5px black;
+}
+@media screen and (max-width: 1200px) {
+.collection-right {
+width: 400px;
+}
+.gif {
+width: 465px;
+height: 455px;
+}
+}
+@media screen and (max-width: 950px) {
+.gif {
+height: 340px;
+width: 340px;
+}
+.collection-right {
+margin-left: 20px;
+}
+}
+
+@media screen and (max-width: 768px) {
+.collection {
+flex-direction: column;
+margin-bottom: 60px;
+}
+.collection-right {
+width: 75%;
+margin-left: 0px;
+}
+.gif {
+width: 75%;
+height: 75%;
+}
+}
+
+.roadmap {
+width: 1180px;
+margin: 100px auto;
+}
+.roadmap h1 {
+color: white;
+font-size: 58px;
+text-shadow: #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px,
+#000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px;
+}
+.road h3 {
+color: black;
+font-size: 38px;
+margin: 0;
+margin-right: 20px;
+}
+.road p {
+margin: 0;
+font-weight: normal;
+font-size: 22px;
+}
+.road {
+padding: 10px 20px;
+font-family: "Montserrat", sans-serif;
+margin: 30px 0;
+display: flex;
+align-items: center;
+border-radius: 18px;
+transform: scale(0.9);
+transition: transform 0.3s;
+background-color: #ffd402;
+text-align: left;
+}
+.road:hover {
+transform: scale(1);
+}
+@media screen and (max-width: 1200px) {
+.roadmap {
+width: 700px;
+}
+}
+@media screen and (max-width: 990px) {
+}
+@media screen and (max-width: 768px) {
+.roadmap {
+width: 75%;
+}
+.roadmap h1 {
+font-size: 42px;
+}
+.road h3 {
+font-size: 26px;
+}
+.road p {
+margin: 0;
+font-size: 16px;
+}
+}
+
+.team {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+.member {
+position: relative;
+}
+.member img {
+margin: 20px;
+position: relative;
+}
+.member h1 {
+margin: 0;
+color: #fff;
+text-shadow: #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px,
+#000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px;
+}
+.member h3 {
+color: rgba(255, 255, 255, 0.808);
+font-style: italic;
+font-weight: 900 !important;
+font-family: "Montserrat", sans-serif;
+margin: 4px 0;
+}
+.hoverable-info {
+position: absolute;
+z-index: 5;
+font-family: "Montserrat", sans-serif;
+color: white;
+width: 86%;
+height: 86%;
+border-radius: 100%;
+display: flex;
+opacity: 0;
+justify-content: center;
+margin-top: 6.7%;
+align-items: center;
+text-align: center;
+transition: all 0.3s;
+left: 0;
+right: 0;
+margin-left: auto;
+margin-right: auto;
+cursor: pointer;
+top: 0;
+padding: 0 10px;
+box-sizing: border-box;
+font-size: 22px;
+font-weight: 700;
+background-color: rgba(0, 0, 0, 0.699);
+}
+.hoverable-info h2 {
+margin: 0;
+line-height: 100%;
+}
+.hoverable-info a {
+text-decoration: none;
+line-height: 100%;
+color: white;
+}
+.member:hover .hoverable-info {
+opacity: 1;
+}
+@media screen and (max-width: 768px) {
+.hoverable-info {
+width: 60%;
+font-size: 18px;
+height: 82%;
+}
+.member {
+margin: 20px 0;
+}
+.member img {
+width: 60%;
+height: 60%;
+}
+.member h1 {
+font-size: 26px;
+}
+}
+
+.stars {
+opacity: 0.7;
+}
+.star1 {
+width: 59px;
+height: 67px;
+position: relative;
+left: -4%;
+}
+.star2 {
+position: relative;
+left: -4%;
+margin-top: 50px;
+}
+.star3 {
+position: relative;
+left: -4%;
+}
+.star4 {
+margin-left: 10%;
+}
+.star5 {
+margin-left: 10%;
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+.star5 {
+width: 15%;
+height: 15%;
+display: none;
+}
+.star2 {
+margin-top: 50px;
+margin-bottom: 20px;
+width: 15%;
+height: 15%;
+}
+.star2 {
+margin-top: 50px;
+margin-bottom: 50px;
+}
+.star3 {
+width: 20%;
+height: 20%;
+}
+}
+
+
+.stars-container {
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+margin: 0 auto;
+width: 80%;
+margin-bottom: 100px;
+}
+
+@media screen and (max-width: 768px) {
+.stars-container {
+justify-content: space-between;
+flex-direction: column;
+margin-bottom: -30%;
+}
+}
+
+.exclusive {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+  }
+  .exclusive h1 {
+  color: white;
+  text-shadow: #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px,
+  #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px;
+  }
+  .exclusive-first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  }
+  .exclusive-first div img {
+  width: 128px;
+  height: 136px;
+  object-fit: contain;
+  margin: 0 auto;
+  }
+  .exclusive-first > div {
+  width: 250px;
+  margin: 80px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
+  position: relative;
+  justify-content: center;
+  }
+  .exclusive-first > div p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal !important;
+  font-size: 16px;
+  }
+  .exclusive-first div h4 {
+  margin: 0px;
+  color: #fff;
+  width: fit-content;
+  text-shadow: #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px,
+  #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px;
+  margin-bottom: 0;
+  font-size: 24px;
+  }
+  @media screen and (max-width: 1200px) {
+  .exclusive {
+  width: 950px;
+  }
+  .exclusive-first > div {
+  width: 170px;
+  }
+  }
+  
+  @media screen and (max-width: 990px) {
+  .exclusive {
+  width: 750px;
+  }
+  /* .exclusive-first {
+  } */
+  .exclusive-first > div {
+  width: 300px;
+  }
+  }
+  @media screen and (max-width: 768px) {
+  .exclusive-first {
+  flex-direction: column;
+  width: 100%;
+  }
+  .exclusive {
+  width: 100%;
+  }
+  .exclusive-first div {
+  margin: 20px 0;
+  width: 70%;
+  }
+  .exclusive-first div > img {
+  width: 288px;
+  height: 306px;
+  }
+  }
+  @media screen and (max-width: 650px) {
+  .exclusive-first div > img {
+  width: 50% !important;
+  height: 50% !important;
+  }
+  }
+  @media screen and (max-width: 576px) {
+  .exclusive {
+  margin-top: 150px;
+  }
+  }
+  
+  .arrow,
+  .minus {
+  position: absolute;
+  right: 10px;
+  }
+  .arrow.active {
+  display: none;
+  }
+  .minus {
+  display: none;
+  }
+  .minus.active {
+  display: block;
+  }
+  .MuiAccordionDetails-root {
+  padding-top: 0 !important;
+  font-size: 20px !important;
+  }
+  .question-styles {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  }
+  
+  .accordion-wrpper {
+  width: 1110px;
+  font-family: "Montserrat", sans-serif !important;
+  margin: 0 auto;
+  }
+  .faq-component h1 {
+  text-transform: capitalize;
+  color: white;
+  text-shadow: #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px,
+  #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px;
+  margin-bottom: 50px;
+  /* font-weight: 500; */
+  }
+  .faq-component {
+  position: relative;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 50px 0;
+  }
+  .MuiTypography-root {
+  font-weight: 600 !important;
+  /* color: #223d83; */
+  font-family: "Montserrat", sans-serif !important;
+  }
+  @media screen and (max-width: 1200px) {
+  .accordion-wrpper {
+  width: 930px;
+  }
+  }
+  @media screen and (max-width: 990px) {
+  .accordion-wrpper {
+  width: 690px;
+  }
+  }
+  @media screen and (max-width: 768px) {
+  .accordion-wrpper {
+  width: 510px;
+  }
+  }
+  @media screen and (max-width: 576px) {
+  .accordion-wrpper {
+  width: 90%;
+  }
+  }
+
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 0;
+  margin-top: 130px;
+  background-color: #000;
+  /* height:50%; */
+}
+
+.footer-logo {
+  width: 95px;
+  height: 95px;
+  margin: 0 auto;
+}
+.footer-ext-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-ext-link svg {
+  width: 45px !important;
+  height: 45px !important;
+}
+/* .footer-ext-link img {
+margin: 10px;
+} */
+.footer-nav {
+  margin: 10px 0;
+}
+.footer-ext-link svg {
+  width: 35px;
+  height: 35px;
+}
+.footer-ext-link a {
+  margin: 5px;
+}
+.footer-nav a {
+  color: white;
+  margin: 10px;
+  cursor: pointer;
+}
+.footer p {
+  color: gray;
+  margin: 0;
+}
+@media screen and (max-width: 576px) {
+.footer-nav {
+  flex-direction: column !important;
+  display: flex;
+}
+}
