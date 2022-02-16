@@ -29,6 +29,7 @@ const webCloud4 = document.querySelector('.web-cloud4');
 const webCloud5 = document.querySelector('.web-cloud5');
 
 
+
 button.addEventListener('click', () => {
     modalDiv.classList.add('modal-active');
 })
@@ -36,6 +37,7 @@ button.addEventListener('click', () => {
 modalClose.addEventListener('click', () => {
     modalDiv.classList.remove('modal-active'); 
 })
+
 
 document.addEventListener('scroll', () => {
     webCloud1.style.left = window.scrollY * 1 + 'px';
@@ -110,3 +112,4 @@ Q7.addEventListener('click', () => {
         icon7.classList.replace('fa-minus', 'fa-plus');
     }
 })
+
