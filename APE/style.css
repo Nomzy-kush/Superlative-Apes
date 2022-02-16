@@ -739,13 +739,13 @@ margin-bottom: -30%;
   position: absolute;
   right: 10px;
   }
-  .arrow.active {
+  .arrow-active {
   display: none;
   }
   .minus {
-  display: none;
+  display: block;
   }
-  .minus.active {
+  .minus-active {
   display: block;
   }
   .MuiAccordionDetails-root {
@@ -943,6 +943,7 @@ margin: 10px;
   margin-left: 1em;
   margin-top: 0.8em;
   cursor: pointer;
+  fill: #fff;
 }
 
 .modal {
@@ -988,5 +989,33 @@ margin: 10px;
   width: 59px !important;
   margin-top: 5em;
   margin-right: 1em;
+}
+
+
+.MuiCollapse-root {
+  content-visibility: hidden;
+}
+
+.MuiCollapse-root-active {
+  content-visibility: visible;
+}
+
+@media screen and (max-width: 1182px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 15em;
+    height: 15em;
+    background-color: rgb(69, 75, 27);
+    position: relative;
+    top: 3em;
+    left: 15em;
+  }
+
+  .svg1, .svg2 {
+    position: relative;
+    right: 20em;
+  }
+
 }
 
