@@ -27,6 +27,8 @@ const webCloud2 = document.querySelector('.web-cloud2');
 const webCloud3 = document.querySelector('.web-cloud3');
 const webCloud4 = document.querySelector('.web-cloud4');
 const webCloud5 = document.querySelector('.web-cloud5');
+const navHidden = document.querySelector('.nav-hidden');
+const navButton = document.querySelector('.toggle-navbar'); 
 
 
 
@@ -112,4 +114,10 @@ Q7.addEventListener('click', () => {
         icon7.classList.replace('fa-minus', 'fa-plus');
     }
 })
+
+navButton.addEventListener('click', () => {
+    navHidden.classList.toggle('nav-hidden-active');
+})
+
+
 
